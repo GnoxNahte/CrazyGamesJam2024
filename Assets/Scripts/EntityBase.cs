@@ -1,13 +1,25 @@
 using UnityEngine;
+using VInspector;
 
-public abstract class EntityBase 
+public abstract class EntityBase : MonoBehaviour
 {
-    public int health;
+    [SerializeField] int maxHealth;
 
-    public void TakeDamage(int value)
+    [ShowInInspector] [ReadOnly]
+    public int health { get; private set; }
+
+    virtual protected void Start()
+    {
+        health = maxHealth;
+    }
+
+    virtual public void TakeDamage(int value)
     {
         health -= value;
     }
 
-    abstract public void Dead();
+    virtual public void OnDead()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -25,7 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - ShootEmUp
   - 
   - 
   - 
@@ -43,6 +43,15 @@ TagManager:
     locked: 0
   - name: Shadow
     uniqueID: 2915577059
+    locked: 0
+  - name: ShootEmUp
+    uniqueID: 961596253
+    locked: 0
+  - name: Enemy
+    uniqueID: 2415038967
+    locked: 0
+  - name: Projectile
+    uniqueID: 58029863
     locked: 0
   m_RenderingLayers:
   - Default

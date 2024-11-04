@@ -7,8 +7,10 @@ using VInspector;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] InputManager inputManager;
+    [SerializeField] SpawnerManager spawnerManager;
 
     static public InputManager InputManager => instance.inputManager;
+    static public SpawnerManager SpawnerManager => instance.spawnerManager;
 
     // Singleton
     [ShowInInspector]
