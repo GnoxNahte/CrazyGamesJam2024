@@ -49,10 +49,9 @@ public class BasicEnemy : EnemyBase
         chaseWait = new WaitForSeconds(chaseUpdateFrequency);
     }
 
-    protected override void Start()
+    private void OnEnable()
     {
-        base.Start();
-
+        ChangeState(State.Find);
         StartCoroutine(UpdateCoroutine());
     }
 

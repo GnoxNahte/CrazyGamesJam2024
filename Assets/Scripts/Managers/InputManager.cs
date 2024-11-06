@@ -79,7 +79,7 @@ public class InputManager : MonoBehaviour
             return;
 
         MoveDir = move.ReadValue<Vector2>();
-        IsInteracting = interact.WasPressedThisFrame();
+        IsInteracting = interact.WasPerformedThisFrame();
         IsHoldingPrimaryAction = primaryAction.IsPressed();
         IsTapPrimaryAction = primaryAction.WasPressedThisFrame();
         IsHoldingSecondaryAction = secondaryAction.IsPressed();

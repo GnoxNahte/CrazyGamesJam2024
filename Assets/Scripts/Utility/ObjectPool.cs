@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 // Game Object Pool. Written by GnoxNahte
 public class ObjectPool : MonoBehaviour
@@ -34,6 +32,7 @@ public class ObjectPool : MonoBehaviour
             go.name = go.name + " " + i;
 #else
             GameObject go = Instantiate(prefab, transform);
+            //TOOD: Try InstantiateAsync()
 #endif
             go.SetActive(false);
 

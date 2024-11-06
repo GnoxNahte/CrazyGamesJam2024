@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using VInspector;
 
@@ -33,6 +32,10 @@ public class EnemySpawner : MonoBehaviour
         camTransform = Camera.main.transform;
 
         pool.Init(spawnLimit / 2);
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(SpawnLoop());
     }
 

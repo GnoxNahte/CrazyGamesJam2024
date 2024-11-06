@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ProjectileEye : MonoBehaviour
@@ -8,8 +9,13 @@ public class ProjectileEye : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
 
+    static WaitForSeconds waitForSeconds = new WaitForSeconds(2);
+
     readonly int animId_OnHit = Animator.StringToHash("OnHit");
     readonly int animId_OnReset = Animator.StringToHash("OnReset");
+
+    Coroutine currCoroutine;
+    Vector2 lastVelocity;
 
     private void Awake()
     {
@@ -20,27 +26,41 @@ public class ProjectileEye : MonoBehaviour
 
     private void OnEnable()
     {
-        animator.SetTrigger(animId_OnReset);
+        currCoroutine = StartCoroutine(ReleaseAfterTime());
+        rb.linearVelocity = lastVelocity;
+    }
+
+    IEnumerator ReleaseAfterTime()
+    {
+        yield return waitForSeconds;
+
+        OnHit();
+    }
+
+    private void OnHit()
+    {
+        animator.SetTrigger(animId_OnHit);
+        rb.linearVelocity = Vector2.zero;
     }
 
     private void ResetProjectile()
     {
-        // TODO change to use object pool
-        Destroy(gameObject);
+        animator.SetTrigger(animId_OnReset);
+        GameManager.MainGameManager.SpawnerManager.ProjectilePool.Release(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Player>())
         {
-            animator.SetTrigger(animId_OnHit);
-            rb.linearVelocity = Vector2.zero;
+            OnHit();
         }
     }
 
     public void SetVelocity(Vector2 dir)
     {
         rb.linearVelocity = dir.normalized * speed;
+        lastVelocity = dir;
         sr.flipX = dir.x > 0;
     }
 }

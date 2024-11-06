@@ -7,13 +7,15 @@ using VInspector;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] InputManager inputManager;
-    [SerializeField] SpawnerManager spawnerManager;
+    [SerializeField] ShootEmUp_Mananger shootEmUp_Mananger;
+    [SerializeField] MainGameManager mainGameManager;
 
     static public InputManager InputManager => instance.inputManager;
-    static public SpawnerManager SpawnerManager => instance.spawnerManager;
+    static public MainGameManager MainGameManager => instance.mainGameManager;
+    static public ShootEmUp_Mananger ShootEmUp_Mananger => instance.shootEmUp_Mananger;
 
     // Singleton
-    [ShowInInspector]
+    //[ShowInInspector]
     public static GameManager instance { get; private set; }
 
     public void RestartGame()

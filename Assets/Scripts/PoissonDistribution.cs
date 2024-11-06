@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
-
-[RequireComponent(typeof(ObjectPool))]
+ 
+[RequireComponent(typeof(ObjectPoolVariation))]
 public class PoissonDistribution : MonoBehaviour
 {
     [SerializeField]
@@ -23,7 +23,7 @@ public class PoissonDistribution : MonoBehaviour
     // Only needed when in editor, when removing all objs to regenerate.
     [SerializeField] List<GameObject> currObjs;
 
-    private ObjectPool pool;
+    private ObjectPoolVariation pool;
 
     [SerializeField] bool respawnOnValidate;
 
@@ -31,7 +31,7 @@ public class PoissonDistribution : MonoBehaviour
     {
         ClearChildren();
 
-        pool = GetComponent<ObjectPool>();
+        pool = GetComponent<ObjectPoolVariation>();
         if (!pool.initDone)
             pool.Init(startCount);
 
@@ -152,7 +152,7 @@ public class PoissonDistribution : MonoBehaviour
 
     public GameObject Spawn(Vector3 pos)
     {
-        return pool.Get(pos);
+        return pool.GetRandom(pos);
     }
 
     public void ReleaseObj(GameObject obj)
@@ -188,7 +188,7 @@ public class PoissonDistribution : MonoBehaviour
     public void DestroyAll()
     {
         if (!pool)
-            pool = GetComponent<ObjectPool>();
+            pool = GetComponent<ObjectPoolVariation>();
 
         ReleaseAllObjs();
         pool.DestroyAll();
