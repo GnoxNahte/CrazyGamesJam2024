@@ -197,26 +197,24 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000e32cc8ad5dcb5039f791f28f27777503
   m_ShapePath:
-  - {x: -0.12371564, y: -0.29389358, z: 0}
-  - {x: -0.041410446, y: -0.25569087, z: 0}
-  - {x: -0.043174505, y: -0.09220195, z: 0}
-  - {x: -0.07087064, y: -0.115460694, z: 0}
-  - {x: -0.22390127, y: -0.07393831, z: 0}
-  - {x: -0.27237058, y: -0.024986327, z: 0}
-  - {x: -0.24888015, y: 0.19043863, z: 0}
-  - {x: -0.17374372, y: 0.2755987, z: 0}
-  - {x: 0.16579032, y: 0.2747376, z: 0}
-  - {x: 0.23531151, y: 0.2118206, z: 0}
-  - {x: 0.27409458, y: 0.114456415, z: 0}
-  - {x: 0.26708448, y: -0.0021987557, z: 0}
-  - {x: 0.20565736, y: -0.07687968, z: 0}
-  - {x: 0.10588372, y: -0.11160982, z: 0}
-  - {x: 0.0026022196, y: -0.09156191, z: 0}
-  - {x: 0.0029479265, y: -0.2613876, z: 0}
-  - {x: 0.065404296, y: -0.29427242, z: 0}
-  m_ShapePathHash: 59639259
+  - {x: -0.27092117, y: -0.7047416, z: 0}
+  - {x: -0.20924583, y: -0.62723744, z: 0}
+  - {x: -0.1926037, y: -0.39727378, z: 0}
+  - {x: -0.25765908, y: -0.32465366, z: 0}
+  - {x: -0.6124574, y: -0.28961635, z: 0}
+  - {x: -0.62758654, y: 0.324629, z: 0}
+  - {x: -0.36472243, y: 0.58975977, z: 0}
+  - {x: 0.1695559, y: 0.5806823, z: 0}
+  - {x: 0.51151556, y: 0.44277585, z: 0}
+  - {x: 0.648994, y: -0.043530777, z: 0}
+  - {x: 0.6088155, y: -0.36140823, z: 0}
+  - {x: 0.3926205, y: -0.3295517, z: 0}
+  - {x: 0.29454523, y: -0.42404753, z: 0}
+  - {x: 0.29382944, y: -0.6674459, z: 0}
+  - {x: 0.36148664, y: -0.70209336, z: 0}
+  m_ShapePathHash: -1200346044
   m_InstanceId: 0
   m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
@@ -225,18 +223,18 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 0.0008620024, y: -0.009336859, z: 0}
-      m_Extent: {x: 0.27323258, y: 0.28493556, z: 0}
+      m_Center: {x: 0.0107037425, y: -0.057490945, z: 0}
+      m_Extent: {x: 0.6382903, y: 0.64725065, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0.06
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0
+    m_InitialTrim: 0.06
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.06
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 1
-  m_PreviousShadowShape2DSource: {fileID: 0}
+  m_PreviousShadowShape2DSource: {fileID: 8851909814698290022}
   references:
     version: 2
     RefIds:
@@ -276,5 +274,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.02, y: 0}
-  m_Radius: 0.3
+  m_Offset: {x: 0, y: -0.08}
+  m_Radius: 0.55

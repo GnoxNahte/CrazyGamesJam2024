@@ -17,7 +17,7 @@ public class BasicEnemy : EnemyBase
 
     [SerializeField] Collider2D[] overlapCircleResults;
     protected int overlapCircleCount;
-    [SerializeField] ContactFilter2D overlapCircleFilter;
+    [SerializeField] protected ContactFilter2D overlapCircleFilter;
 
     [SerializeField]
     [ReadOnly]
@@ -170,7 +170,7 @@ public class BasicEnemy : EnemyBase
         }
     }
 
-    private void OnDrawGizmosSelected()
+    virtual protected void OnDrawGizmosSelected()
     {
         Color originalColor = Gizmos.color;
         Gizmos.color = Color.green;

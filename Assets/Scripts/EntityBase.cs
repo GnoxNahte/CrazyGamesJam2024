@@ -7,6 +7,7 @@ public abstract class EntityBase : MonoBehaviour
 
     [ShowInInspector] [ReadOnly]
     public int health { get; private set; }
+    public int MaxHealth => maxHealth;
 
     virtual protected void Start()
     {

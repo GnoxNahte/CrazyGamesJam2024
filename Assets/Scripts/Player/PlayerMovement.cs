@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] Vector2 moveDir;
+
+    public Vector2 MoveDir => moveDir;
 
     InputManager input;
     Rigidbody2D rb;
@@ -20,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (input)
-            rb.MovePosition(rb.position + input.MoveDir * speed * Time.deltaTime);
+        {
+            moveDir = input.MoveDir;
+            rb.MovePosition(rb.position + moveDir * speed * Time.deltaTime);
+        }
     }
 }

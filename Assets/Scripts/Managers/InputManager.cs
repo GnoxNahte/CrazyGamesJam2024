@@ -18,6 +18,7 @@ public class InputManager : MonoBehaviour
     private InputAction mouseDelta;
     private InputAction panActivateBtn;
     private InputAction zoom;
+    private InputAction switchWeapon;
 
     [field: SerializeField] public Vector2 MoveDir { get; private set; }
     [field: SerializeField] public bool IsInteracting { get; private set; }
@@ -30,6 +31,7 @@ public class InputManager : MonoBehaviour
     [field: SerializeField] public Vector2 MouseDelta { get; private set; }
     [field: SerializeField] public bool IfPan { get; private set; }
     [field: SerializeField] public float Zoom { get; private set; }
+    [field: SerializeField] public bool SwitchWeapon { get; private set; }
 
     private void Awake()
     {
@@ -44,6 +46,7 @@ public class InputManager : MonoBehaviour
         mouseDelta = playerControls.Player.MouseDelta;
         panActivateBtn = playerControls.Player.PanActivate;
         zoom = playerControls.Player.Zoom;
+        switchWeapon = playerControls.Player.SwitchWeapon;
     }
 
     private void OnEnable()
@@ -57,6 +60,7 @@ public class InputManager : MonoBehaviour
         mouseDelta.Enable();
         panActivateBtn.Enable();
         zoom.Enable();
+        switchWeapon.Enable();
     }
 
     private void OnDisable()
@@ -71,6 +75,7 @@ public class InputManager : MonoBehaviour
         mouseDelta.Disable();
         panActivateBtn.Disable();
         zoom.Disable();
+        switchWeapon.Disable();
     }
 
     private void Update()
@@ -84,10 +89,11 @@ public class InputManager : MonoBehaviour
         IsTapPrimaryAction = primaryAction.WasPressedThisFrame();
         IsHoldingSecondaryAction = secondaryAction.IsPressed();
         IsTapSecondaryAction = secondaryAction.WasPressedThisFrame();
-        Restart = restart.WasPressedThisFrame();
+        Restart = restart.WasPerformedThisFrame();
         MousePos = mousePos.ReadValue<Vector2>();
         MouseDelta = -mouseDelta.ReadValue<Vector2>();
         IfPan = panActivateBtn.IsPressed();
         Zoom = Mathf.Clamp(zoom.ReadValue<float>(), -1, 1);
+        SwitchWeapon = switchWeapon.WasPerformedThisFrame();
     }
 }
