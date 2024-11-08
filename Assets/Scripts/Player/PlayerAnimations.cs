@@ -14,8 +14,8 @@ public class PlayerAnimations : MonoBehaviour
 
     readonly int animId_DirX = Animator.StringToHash("DirX");
     readonly int animId_DirY = Animator.StringToHash("DirY");
-    readonly int animId_Attack = Animator.StringToHash("Attack");
-    readonly int animId_AttackType = Animator.StringToHash("AttackType");
+    readonly int animId_IsMelee = Animator.StringToHash("IsMelee");
+    readonly int animId_UseAbility = Animator.StringToHash("UseAbility");
     readonly int animId_IsDead = Animator.StringToHash("IsDead");
 
     private void Awake()
@@ -35,14 +35,21 @@ public class PlayerAnimations : MonoBehaviour
             sr.flipX = movement.MoveDir.x < 0;
     }
 
-    public void OnChangeWeapon()
+    public void OnChangeWeapon(bool isUsingMelee)
     {
-
+        animator.SetBool(animId_IsMelee, isUsingMelee);
     }
 
-    public void OnAttack(PlayerAttack.Weapon weapon)
+    public void OnUseAbility()
     {
-        animator.SetInteger(animId_AttackType, (int)weapon);
-        animator.SetTrigger(animId_Attack);
+        animator.SetTrigger(animId_UseAbility);
+    }
+
+    public void OnUseAbilityAnimDone()
+    {
+        bool success = attack.OnTransportEnemies();
+        
+        if (success) 
+            GameManager.MinigameManager.OnTransitionMinigame(MinigameManager.GameType.ShootEmUp);
     }
 }

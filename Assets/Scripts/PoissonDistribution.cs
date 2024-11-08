@@ -29,11 +29,17 @@ public class PoissonDistribution : MonoBehaviour
 
     private void Awake()
     {
+
+        if (!enabled)
+            return;
+
         ClearChildren();
 
         pool = GetComponent<ObjectPoolVariation>();
         if (!pool.initDone)
             pool.Init(startCount);
+
+        SpawnAll();
 
 #if UNITY_EDITOR
         if (randSeed != -1)

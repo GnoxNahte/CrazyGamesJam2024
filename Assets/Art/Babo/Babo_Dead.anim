@@ -24,9 +24,9 @@ AnimationClip:
       value: {fileID: 9046074887418808734, guid: 5c406424c06ae9746ac52c54ba9d11f4, type: 3}
     - time: 0.125
       value: {fileID: -2747406231421938974, guid: 5c406424c06ae9746ac52c54ba9d11f4, type: 3}
-    - time: 0.375
+    - time: 0.25
       value: {fileID: 7560014652781956428, guid: 5c406424c06ae9746ac52c54ba9d11f4, type: 3}
-    - time: 0.625
+    - time: 0.375
       value: {fileID: 4935618289055041825, guid: 5c406424c06ae9746ac52c54ba9d11f4, type: 3}
     attribute: m_Sprite
     path: 
@@ -59,7 +59,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -79,7 +79,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.625
+  - time: 0.375
     functionName: OnDeadAnimDone
     data: 
     objectReferenceParameter: {fileID: 0}

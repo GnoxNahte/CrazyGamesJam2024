@@ -49,8 +49,10 @@ public class BasicEnemy : EnemyBase
         chaseWait = new WaitForSeconds(chaseUpdateFrequency);
     }
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
+
         ChangeState(State.Find);
         StartCoroutine(UpdateCoroutine());
         rb.simulated = true;

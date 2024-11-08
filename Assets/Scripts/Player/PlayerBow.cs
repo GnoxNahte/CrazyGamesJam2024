@@ -31,7 +31,6 @@ public class PlayerBow : MonoBehaviour
     {
         Vector2 spawnPos = spawnPoint.position;
         GameObject projectile = projectilePool.Get(spawnPos);
-        print("Fwd: " + transform.rotation.eulerAngles);
 
         projectile.GetComponent<PlayerArrow>().SetVelocity(transform.right);
     }

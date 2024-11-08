@@ -52,6 +52,7 @@ public class ShootEmUp_EnemyBullet : MonoBehaviour
     {
         if ((layerMask & (1 << collision.gameObject.layer)) == 0)
             return;
+        print("Hit");
 
         animator?.SetBool(animId_OnHit, true);
         pool.Release(gameObject);

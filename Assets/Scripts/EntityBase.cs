@@ -11,6 +11,11 @@ public abstract class EntityBase : MonoBehaviour
 
     virtual protected void Start()
     {
+        //health = maxHealth;
+    }
+
+    virtual protected void OnEnable()
+    {
         health = maxHealth;
     }
 

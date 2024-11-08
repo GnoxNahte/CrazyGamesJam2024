@@ -45,6 +45,9 @@ TagManager:
   - name: Shadow
     uniqueID: 2915577059
     locked: 0
+  - name: AbilityPortal
+    uniqueID: 3718963981
+    locked: 0
   - name: ShootEmUp
     uniqueID: 961596253
     locked: 0

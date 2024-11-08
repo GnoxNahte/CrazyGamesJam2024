@@ -116,4 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   damage: 5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4096
   isPlayer: 0

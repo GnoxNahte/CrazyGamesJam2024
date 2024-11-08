@@ -12,7 +12,7 @@ public class MainGame_SpawnerManager : MonoBehaviour
 
     private void Start()
     {
-        treeDistribution.SpawnAll();
+        //treeDistribution.SpawnAll();
         projectilePool.Init();
     }
 }

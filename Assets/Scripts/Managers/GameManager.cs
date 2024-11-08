@@ -9,10 +9,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] InputManager inputManager;
     [SerializeField] ShootEmUp_Mananger shootEmUp_Mananger;
     [SerializeField] MainGameManager mainGameManager;
+    [SerializeField] MinigameManager minigameManager;
+    [SerializeField] EndScreen endScreen;
+    [SerializeField] ScoreManager scoreManager;
 
     static public InputManager InputManager => instance.inputManager;
     static public MainGameManager MainGameManager => instance.mainGameManager;
     static public ShootEmUp_Mananger ShootEmUp_Mananger => instance.shootEmUp_Mananger;
+    static public MinigameManager MinigameManager => instance.minigameManager;
+    static public EndScreen EndScreen => instance.endScreen;
+    static public ScoreManager ScoreManager => instance.scoreManager;
 
     // Singleton
     //[ShowInInspector]

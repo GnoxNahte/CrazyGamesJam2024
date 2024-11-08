@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8479064510036187224}
   - component: {fileID: 5385056524869933408}
   - component: {fileID: 7225993300472606871}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Babo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +130,9 @@ MonoBehaviour:
   parent: {fileID: 1736968721698554723}
   gun1: {fileID: 1336507549089053855}
   gun2: {fileID: 3831116663246540526}
+  moveWidth: 15
+  speed: 1
+  waitRange: {x: 0.5, y: 5}
 --- !u!58 &7225993300472606871
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -175,7 +178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5835692957481862723}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: ShootEmUp_Babo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2111445052026897952}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BulletSpawnPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +245,7 @@ GameObject:
   - component: {fileID: 140396486505824575}
   - component: {fileID: 1414203896672796633}
   - component: {fileID: 1336507549089053855}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +313,7 @@ GameObject:
   - component: {fileID: 4429384812990231920}
   - component: {fileID: 2265978773291494255}
   - component: {fileID: 3831116663246540526}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Gun 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7452487922902807628}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BulletSpawnPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
