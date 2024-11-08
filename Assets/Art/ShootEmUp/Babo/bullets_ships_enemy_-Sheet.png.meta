@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 40b11baf4fcebdd4d983a25bcb8afeb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5636377025815874631
+    second: bullets_ships_enemy_-Sheet_0
+  - first:
+      213: 7328115600162588808
+    second: bullets_ships_enemy_-Sheet_1
+  - first:
+      213: -7274746904075850437
+    second: bullets_ships_enemy_-Sheet_2
+  - first:
+      213: -3221573055504717151
+    second: bullets_ships_enemy_-Sheet_3
+  - first:
+      213: -1259528464588460740
+    second: bullets_ships_enemy_-Sheet_4
+  - first:
+      213: 1061233798833727223
+    second: bullets_ships_enemy_-Sheet_5
+  - first:
+      213: -409704626207846744
+    second: bullets_ships_enemy_-Sheet_6
+  - first:
+      213: -557065215572867624
+    second: bullets_ships_enemy_-Sheet_7
+  - first:
+      213: 1353452210143472728
+    second: bullets_ships_enemy_-Sheet_8
+  - first:
+      213: 9074226483930985643
+    second: bullets_ships_enemy_-Sheet_9
+  - first:
+      213: -8746599412498068389
+    second: bullets_ships_enemy_-Sheet_10
+  - first:
+      213: 6534439286320562546
+    second: bullets_ships_enemy_-Sheet_11
+  - first:
+      213: -4101198430932877935
+    second: bullets_ships_enemy_-Sheet_12
+  - first:
+      213: -3977617680973362723
+    second: bullets_ships_enemy_-Sheet_13
+  - first:
+      213: 2140361200230056479
+    second: bullets_ships_enemy_-Sheet_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 112
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c8debca0f683e40800000000000000
+      internalID: 5636377025815874631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 113
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88880b4ff42b2b560800000000000000
+      internalID: 7328115600162588808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 112
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dafa7eb38ea0b90800000000000000
+      internalID: -7274746904075850437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 113
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaeba8ef5caa43d0800000000000000
+      internalID: -3221573055504717151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 112
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d26b3e881458ee0800000000000000
+      internalID: -1259528464588460740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 113
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f66f1374824abe00800000000000000
+      internalID: 1061233798833727223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 29
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae0c0c20df605af0800000000000000
+      internalID: -409704626207846744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 30
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d58d0d4328e448f0800000000000000
+      internalID: -557065215572867624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 33
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ca11e3d9d68c210800000000000000
+      internalID: 1353452210143472728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 32
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4f52ae8e02eed70800000000000000
+      internalID: 9074226483930985643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 33
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c89610d26dd9680800000000000000
+      internalID: -8746599412498068389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 41
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2718e73f8edfeaa50800000000000000
+      internalID: 6534439286320562546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 37
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d3bd291cd9517c0800000000000000
+      internalID: -4101198430932877935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 34
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd905412bc9acc8c0800000000000000
+      internalID: -3977617680973362723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullets_ships_enemy_-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 37
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12cdb6eb2714bd10800000000000000
+      internalID: 2140361200230056479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bullets_ships_enemy_-Sheet_0: 5636377025815874631
+      bullets_ships_enemy_-Sheet_1: 7328115600162588808
+      bullets_ships_enemy_-Sheet_10: -8746599412498068389
+      bullets_ships_enemy_-Sheet_11: 6534439286320562546
+      bullets_ships_enemy_-Sheet_12: -4101198430932877935
+      bullets_ships_enemy_-Sheet_13: -3977617680973362723
+      bullets_ships_enemy_-Sheet_14: 2140361200230056479
+      bullets_ships_enemy_-Sheet_2: -7274746904075850437
+      bullets_ships_enemy_-Sheet_3: -3221573055504717151
+      bullets_ships_enemy_-Sheet_4: -1259528464588460740
+      bullets_ships_enemy_-Sheet_5: 1061233798833727223
+      bullets_ships_enemy_-Sheet_6: -409704626207846744
+      bullets_ships_enemy_-Sheet_7: -557065215572867624
+      bullets_ships_enemy_-Sheet_8: 1353452210143472728
+      bullets_ships_enemy_-Sheet_9: 9074226483930985643
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

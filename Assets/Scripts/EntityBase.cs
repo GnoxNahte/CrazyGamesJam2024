@@ -17,9 +17,17 @@ public abstract class EntityBase : MonoBehaviour
     virtual public void TakeDamage(int value)
     {
         health -= value;
+
+        if (health < 0)
+            OnDead();
     }
 
     virtual public void OnDead()
+    {
+        //Destroy(gameObject);
+    }
+
+    virtual public void OnDeadAnimDone()
     {
         Destroy(gameObject);
     }

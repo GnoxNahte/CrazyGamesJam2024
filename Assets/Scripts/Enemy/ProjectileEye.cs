@@ -4,6 +4,7 @@ using UnityEngine;
 public class ProjectileEye : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] int damage;
 
     SpriteRenderer sr;
     Animator animator;
@@ -51,8 +52,10 @@ public class ProjectileEye : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Player>())
+        Player player = collision.GetComponent<Player>();
+        if (player)
         {
+            player.TakeDamage(damage);
             OnHit();
         }
     }
@@ -60,7 +63,7 @@ public class ProjectileEye : MonoBehaviour
     public void SetVelocity(Vector2 dir)
     {
         rb.linearVelocity = dir.normalized * speed;
+        rb.SetRotation(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 180);
         lastVelocity = dir;
-        sr.flipX = dir.x > 0;
     }
 }

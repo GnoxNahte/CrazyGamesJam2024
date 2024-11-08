@@ -7,6 +7,7 @@ public class PlayerAnimations : MonoBehaviour
     int nextAnim;
 
     Animator animator;
+    SpriteRenderer sr;
 
     PlayerMovement movement;
     PlayerAttack attack;
@@ -20,6 +21,7 @@ public class PlayerAnimations : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
         movement = GetComponent<PlayerMovement>();
         attack = GetComponent<PlayerAttack>();
     }
@@ -28,6 +30,14 @@ public class PlayerAnimations : MonoBehaviour
     {
         animator.SetFloat(animId_DirX, movement.MoveDir.x);
         animator.SetFloat(animId_DirY, movement.MoveDir.y);
+
+        if (movement.MoveDir.x != 0)
+            sr.flipX = movement.MoveDir.x < 0;
+    }
+
+    public void OnChangeWeapon()
+    {
+
     }
 
     public void OnAttack(PlayerAttack.Weapon weapon)

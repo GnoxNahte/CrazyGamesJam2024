@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 public class ShootEmUp_Gun : MonoBehaviour
 {
     [SerializeField] int ammoCount;
-    [SerializeField] ObjectPool ammoPool;
     [SerializeField] Transform spawnPoint;
+    [SerializeField] private ShootEmUp_PlayerMovement movement;
 
     [Range(5f, 500f)]
     public float bulletSpeed;
@@ -35,7 +35,7 @@ public class ShootEmUp_Gun : MonoBehaviour
         lastShotTime = Time.time;
         prevRotation = transform.rotation;
 
-        ammoPool.Init(ammoCount);
+        projectilePool.Init(ammoCount);
     }
 
     // Update is called once per frame
@@ -61,17 +61,12 @@ public class ShootEmUp_Gun : MonoBehaviour
             Vector2 spawnPos = spawnPoint.position;
             GameObject projectile = projectilePool.Get(spawnPos);
 
-            projectile.GetComponent<ShootEmUp_Bullet>().Init(bulletSpeed, Color.white, i * timeBetweenEachShot);
+            projectile.GetComponent<ShootEmUp_Bullet>().Init(projectilePool, bulletSpeed, movement.Angle, Color.white, i * timeBetweenEachShot);
         }
 
         lastShotTime = lastShotTime + numBullets * timeBetweenEachShot;
 
         prevPos = spawnPoint.position;
         prevRotation = transform.rotation;
-    }
-
-    public void ReleaseBullet(GameObject bullet)
-    {
-        projectilePool.Release(bullet);
     }
 }

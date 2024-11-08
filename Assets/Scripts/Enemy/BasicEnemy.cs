@@ -53,6 +53,7 @@ public class BasicEnemy : EnemyBase
     {
         ChangeState(State.Find);
         StartCoroutine(UpdateCoroutine());
+        rb.simulated = true;
     }
 
     private void FixedUpdate()
@@ -62,20 +63,33 @@ public class BasicEnemy : EnemyBase
             sr.flipX = newDir.x > 0;
     }
 
+    public override void OnDead()
+    {
+        base.OnDead();
+
+        rb.simulated = false;
+        ChangeState(State.Dead);
+    }
+
+    public override void OnDeadAnimDone()
+    {
+        GameManager.MainGameManager.SpawnerManager.EnemySpawner.Release(gameObject);
+    }
+
     protected override void ChangeState(State newState)
     {
         newDir = Vector2.zero;
 
         // Previous state
-        switch (currState)
-        {
-        }
+        //switch (currState)
+        //{
+        //}
 
         base.ChangeState(newState);
 
-        switch (newState)
-        {
-        }
+        //switch (newState)
+        //{
+        //}
 
         animator.SetInteger(animId_State, (int)newState);
     }

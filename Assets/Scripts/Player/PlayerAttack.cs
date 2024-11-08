@@ -3,19 +3,23 @@ using VInspector;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField] Transform bowTransform;
+
     InputManager controls;
     PlayerAnimations animations;
 
     public enum Weapon
     {
-        Bow,
         Knife,
+        Bow,
         Bomb,
         WEAPON_COUNT
     }
 
     [SerializeField] [ReadOnly]
     Weapon currWeapon;
+
+    Camera mainCam;
 
     public Weapon CurrWeapon => currWeapon;
 
@@ -26,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
+        mainCam = Camera.main;
         controls = GameManager.InputManager;
     }
 
@@ -42,5 +47,9 @@ public class PlayerAttack : MonoBehaviour
         {
             animations.OnAttack(currWeapon);
         }
+
+        Vector3 dir = (mainCam.ScreenToWorldPoint(controls.MousePos) - transform.position).normalized;
+        bowTransform.position = transform.position + dir;
+        bowTransform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
     }
 }
